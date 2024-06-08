@@ -1,0 +1,107 @@
+/* ===== google font import - poformins ===== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,700;0,800;0,900;1,400;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(6, 167, 241);
+}
+.container{
+    background: linear-gradient(to top,rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url(img/IMG-20240329-WA0063.jpg);
+    position: relative;
+    max-width:430px ;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 5px 10px rgba(0, 0,0, 0.1);
+padding: 40px;
+
+
+}
+.container .form{
+    padding: 30px;
+}
+.container .form .tittle{
+    position: relative;
+    font-size: 27px;
+    font-weight: 600;
+}
+.form.tille::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background-color: rgb(12, 12, 211);
+    border-radius: 25px;
+}
+.input-field{
+    position: relative;
+    margin-top: 40px;
+
+}
+.input-field input{
+    
+padding: 0 20px;
+border:none ;
+outline:none;
+font-size: 16px;
+border-bottom: 2px solid #ccc;
+border-top:2px solid transparent; 
+transition:all 0.2s ease;
+}
+.input-field input :is( :focus,:valid ){
+border-bottom-color: bottom color #4070f4;
+} 
+.input-field i{
+position: center;
+top:50% ;
+transform:translateY(-50%) ;
+color:#999 ;
+transition: all 0.2s ease;
+}
+
+.input-field input :is( :focus,:valid )~ i{
+    color: #4070f4;
+}
+.checkbox-text{
+    padding: 10px;
+    
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.checkbox-content{
+    display: flex;
+align-items: center;
+}
+ .forms a{
+    text-decoration:none;
+ }
+ .forms .button input{
+    margin-top: 15px;
+    border: none;
+    background-color: #2058f2;
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    color: aliceblue;
+ }
+ .forms.button input :hover{
+    background-color: rgb(98, 181, 228);
+ }
+ .login-signup{
+    margin-top: 30px;
+    text-align: center;
+ }
